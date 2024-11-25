@@ -1,22 +1,41 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Decodificador de JWT</title>
-    <link rel="stylesheet" href="styles.css">    
-</head>
-<body>
-<div class="container">
-    <h1>Decodificador de JWT</h1>
-    <label for="jwtInput">Introduce el JWT a decodificar:</label>
-    <textarea id="jwtInput" rows="5" placeholder="eyJhbGciOiJIUzI1NiIs..."></textarea>
+    <link rel="stylesheet" href="../dev-laoz-WaveArtCSS/src/theme.css" />
+    <link rel="stylesheet" href="../dev-laoz-WaveArtCSS/src/base.css" />
+    <link rel="stylesheet" href="../dev-laoz-WaveArtCSS/src/components.css" />
+    <link
+      rel="icon"
+      href="../dev-laoz-WaveArtCSS/assets/favicons/favicon.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Decodificador de JWT</h1>
+      <p>Introduce un JWT para decodificarlo.</p>
+    </header>
+    <main>
+      <div class="container">
+        <label for="jwtInput">Introduce el JWT a decodificar:</label>
+        <textarea
+          id="jwtInput"
+          rows="5"
+          placeholder="eyJhbGciOiJIUzI1NiIs..."
+        ></textarea>
 
-    <button id="decodeJwt">Decodificar JWT</button>
+        <button id="decodeJwt">Decodificar JWT</button>
 
-    <h2>Contenido Decodificado:</h2>
-    <div id="decodedResult"></div>
-</div>
+        <h2>Contenido Decodificado:</h2>
+        <div id="decodedResult"></div>
+      </div>
+    </main>
+    <footer>
+      <p>© 2024 Mi Negocio. Todos los derechos reservados.</p>
+    </footer>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
