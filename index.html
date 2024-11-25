@@ -20,17 +20,20 @@
     </header>
     <main>
       <div class="container">
-        <label for="jwtInput">Introduce el JWT a decodificar:</label>
-        <textarea
-          id="jwtInput"
-          rows="5"
-          placeholder="eyJhbGciOiJIUzI1NiIs..."
-        ></textarea>
-
-        <button id="decodeJwt">Decodificar JWT</button>
-
-        <h2>Contenido Decodificado:</h2>
-        <div id="decodedResult"></div>
+        <fieldset>
+          <legend>Información JWT</legend>
+          <label for="jwtInput">Introduce el JWT a decodificar:</label>
+          <textarea
+            id="jwtInput"
+            rows="5"
+            placeholder="eyJhbGciOiJIUzI1NiIs..."
+          ></textarea>
+          <button id="decodeJwt">Decodificar JWT</button>
+        </fieldset>
+        <fieldset>
+          <legend>Contenido Decodificado:</legend>
+          <div id="decodedResult"></div>
+        </fieldset>
       </div>
     </main>
     <footer>
